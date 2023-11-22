@@ -1,3 +1,76 @@
+libevent (2.1.12-stable-8) unstable; urgency=medium
+
+  * Upload to unstable
+  * Restore last unstable version
+  * d/patches: Add patch evutil_secure_rng_add_bytes_noop.patch
+    to make evutil_secure_rng_add_bytes noop with glibc's
+    implemtation of arc4random, thanks zhsj@debian.org!
+    (Closes: #1023284)
+  * d/control: upgrade Standards-Version to 4.6.2
+  * d/copyright: update year to 2023
+
+ -- Nicolas Mora <babelouest@debian.org>  Wed, 04 Jan 2023 15:28:26 -0500
+
+libevent (2.1.12-stable-7) experimental; urgency=medium
+
+  * d/control: change package name to libevent-2.1-7a to update rdeps
+               (Closes: #1023284)
+
+ -- Nicolas Mora <babelouest@debian.org>  Mon, 07 Nov 2022 07:14:20 -0500
+
+libevent (2.1.12-stable-6) experimental; urgency=medium
+
+  * d/symbols: remove symbol evutil_secure_rng_add_bytes
+  * d/control: upgrade Standards-Version to 4.6.1
+
+ -- Nicolas Mora <babelouest@debian.org>  Wed, 02 Nov 2022 13:07:03 -0400
+
+libevent (2.1.12-stable-5) unstable; urgency=medium
+
+  * d/control: Update maintainer
+  * d/upstream: Add metadata Documentation
+
+ -- Nicolas Mora <babelouest@debian.org>  Fri, 15 Apr 2022 11:26:52 -0400
+
+libevent (2.1.12-stable-4) unstable; urgency=medium
+
+  * New maintainer upload (Closes: #1008950)
+  * d/copyright: fix superfluous-file-pattern
+  * d/copyright: Add license text for GPL-2+ and GPL-3+
+  * d/control: upgrade Standards-Version to 4.6.0
+  * d/upstream: Add metadata
+  * d/test: Add autopkgtest
+  * d/watch: Upgrade watch version to 4 (no change)
+
+ -- Nicolas Mora <babelouest@debian.org>  Thu, 14 Apr 2022 19:51:48 -0400
+
+libevent (2.1.12-stable-3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * debian/changelog: Drop too long lines from previous entry
+
+ -- Balint Reczey <balint@balintreczey.hu>  Mon, 04 Apr 2022 21:20:53 +0200
+
+libevent (2.1.12-stable-2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+  [ Debian Janitor ]
+  * Re-export upstream signing key without extra signatures.
+    Changes-By: lintian-brush
+    Fixes: lintian: public-upstream-key-not-minimal
+  * Drop transition for old debug package migration.
+    Changes-By: lintian-brush
+    Fixes: lintian: debug-symbol-migration-possibly-complete
+  * Avoid explicitly specifying -Wl,--as-needed linker flag.
+    Changes-By: lintian-brush
+    Fixes: lintian: debian-rules-uses-as-needed-linker-flag
+
+  [ Balint Reczey ]
+  * Orphaning the package
+
+ -- Balint Reczey <balint@balintreczey.hu>  Sun, 03 Apr 2022 21:30:48 +0200
+
 libevent (2.1.12-stable-1) unstable; urgency=medium
 
   [ Debian Janitor ]

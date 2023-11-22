@@ -1,4 +1,6 @@
+# SymbolsHelper-Confirmed: 2.1.8-stable amd64
 libevent-2.1.so.7 libevent-2.1-7 #MINVER#
+* Build-Depends-Package: libevent-dev
  EVUTIL_ISALNUM_@Base 2.1.8-stable
  EVUTIL_ISALPHA_@Base 2.1.8-stable
  EVUTIL_ISDIGIT_@Base 2.1.8-stable

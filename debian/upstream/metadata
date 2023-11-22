@@ -1,0 +1,5 @@
+Bug-Database: https://github.com/libevent/libevent/issues
+Bug-Submit: https://github.com/libevent/libevent/issues/new
+Repository: https://github.com/libevent/libevent.git
+Repository-Browse: https://github.com/libevent/libevent
+Documentation: http://www.wangafu.net/~nickm/libevent-2.1/doxygen/html

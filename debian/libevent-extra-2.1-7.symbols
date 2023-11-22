@@ -1,4 +1,6 @@
+# SymbolsHelper-Confirmed: 2.1.8-stable amd64
 libevent_extra-2.1.so.7 libevent-extra-2.1-7 #MINVER#
+* Build-Depends-Package: libevent-dev
  evdns_add_server_port@Base 2.1.8-stable
  evdns_add_server_port_with_base@Base 2.1.8-stable
  evdns_base_clear_host_addresses@Base 2.1.8-stable

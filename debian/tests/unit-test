@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+exec 2>&1
+
+autoreconf -i
+./configure --disable-libevent-regress
+make
+
+#ls -l .libs/*
+
+rm -f .libs/*
+
+for lib in /usr/lib/$(dpkg-architecture -qDEB_BUILD_MULTIARCH)/libevent*.so*; do
+  #echo Link lib $lib
+  ln -s $lib .libs/
+done
+#false
+
+make check

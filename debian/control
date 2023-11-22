@@ -1,13 +1,14 @@
 Source: libevent
-Maintainer: Balint Reczey <rbalint@ubuntu.com>
+Maintainer: Nicolas Mora <babelouest@debian.org>
 Section: libs
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 13),
                libssl-dev
-Standards-Version: 3.9.8
+Standards-Version: 4.6.2
 Vcs-Git: https://salsa.debian.org/debian/libevent.git -b master
 Vcs-Browser: https://salsa.debian.org/debian/libevent
 Homepage: https://libevent.org/
+Rules-Requires-Root: no
 
 Package: libevent-dev
 Architecture: any
