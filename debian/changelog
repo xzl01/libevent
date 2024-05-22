@@ -1,3 +1,9 @@
+libevent (2.1.12-stable-8deepin1) unstable; urgency=medium
+
+  * symbols: Remove event_strlcpy_ symbol, now provided by glibc 2.38
+
+ -- xiangzelong <xiangzelong@deepin.org>  Wed, 22 May 2024 10:45:57 +0800
+
 libevent (2.1.12-stable-8) unstable; urgency=medium
 
   * Upload to unstable

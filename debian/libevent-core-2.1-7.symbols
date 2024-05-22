@@ -310,7 +310,6 @@ libevent_core-2.1.so.7 libevent-core-2.1-7 #MINVER#
  event_set_mem_functions@Base 2.1.8-stable
  event_sock_err@Base 2.1.8-stable
  event_sock_warn@Base 2.1.8-stable
- (arch=!musl-linux-any)event_strlcpy_@Base 2.1.8-stable
  event_warn@Base 2.1.8-stable
  event_warnx@Base 2.1.8-stable
  evmap_check_integrity_@Base 2.1.8-stable
